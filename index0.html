@@ -1,0 +1,219 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>kuromatsuya</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet0.css">
+	<link rel="stylesheet" type="text/css" href="responsive0.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|M+PLUS+1p:300|Playfair+Display" rel="stylesheet">
+	<!--日本語本文　font-family: 'M PLUS 1p', sans-serif;　-->
+	<!--英語メニュー  font-family: 'Julius Sans One', sans-serif; -->
+	<!--英語h2  font-family: 'Playfair Display', serif; -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top -150;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+
+</head>
+<body>
+	<div class="header">
+		<div class="header_top">
+			<h1><a class="ku" href="#top">黒松屋</a></h1>
+			<h2>KUROMATSUYA</h2>
+		</div>
+		<div class="header_bottom">
+			<ul>
+				<li><a class="link" href="#concept">CONCEPT</a></li>
+				<li><a class="link" href="#menu">MENU</a></li>
+				<li><a class="link" href="#access">ACCESS</a></li>
+				<li><a class="link" href="#reservation">RESERVATION</a></li>
+				<li><a class="link" href="#recruit">RECRUIT</a></li>
+			</ul>
+		</div>
+	</div>
+<!--レスポンシブ＿メニュー -->
+	<div class="header_resp">
+		<div class="header_resp_top">
+			<div class="header_resp_left"><a class="header_resp_ku" href="#top">黒松屋</a></div>
+			<div class="header_btn">
+				<a class="fa fa-bars"></a>
+			</div>
+		</div>
+		<div class="header_resp_bottom">
+			<ul>
+				<li><a class="resp_link" href="#concept">CONCEPT</a></li>
+				<li><a class="resp_link" href="#menu">MENU</a></li>
+				<li><a class="resp_link" href="#access">ACCESS</a></li>
+				<li><a class="resp_link" href="#reservation">RESERVATION</a></li>
+				<li><a class="resp_link" href="#recruit">RECRUIT</a></li>
+			</ul>
+		</div>
+<!--レスポンシブ＿メニュー終わり -->
+	</div>
+
+	<div class="main" id="top">
+
+		<div class="top">
+			<img class="top_img" src="public/main2.jpg">
+		</div>
+
+		<div class="concept" id="concept">
+			<div class="concept_title">
+				<div class="concept_border"></div>
+				<h2>CONCEPT</h2>
+			</div>
+			<div class="concept_left">
+				<img class="concept_img" src="public/food1.jpg">
+			</div>
+			<div class="concept_right">
+				<p>
+					【新鮮な地鶏を備長炭で】<br>
+					鶏肉は群馬県産の上州軍鶏や鶏肉を使用。<br>
+					毎日入荷する新鮮な食材を使い<br>
+					また季節感を大切にした料理を提供し、<br>
+					お客様へ楽しんで頂けるよう<br>
+					日々努力しております。
+				</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<div class="menu" id="menu">
+			<div class="menu_title">
+				<div class="menu_border"></div>
+				<h2>MENU</h2>
+			</div>
+			<div class="menu_right">
+				<img class="menu_img" src="public/food2.jpg">
+			</div>
+			<div class="menu_left">
+				<p>
+						【やきとり】140円～<br>
+						純けい串（親鳥） 　<br>
+						若鶏もも串<br>
+						鶏首かわ串<br>
+						鶏つくね串	など<br>
+						<br>
+						【串焼き】100円～<br>
+						うずら串<br>
+						豚なんこつ串 など<br>
+						※その日の仕入れによる。<br>
+						<br>
+						【その他】<br>
+						<br>
+						もつ煮込み<br>
+						おでん<br>
+
+					</p>
+			</div>
+
+
+			<div class="clear"></div>
+		</div>
+		<div class="menu_btn">
+			<div class="menu_wrapper">
+				<a class="menu_list">MENU LIST ></a>
+			</div>
+		</div>
+		<div class="access" id="access">
+			<div class="access_title">
+				<div class="access_border"></div>
+				<h2>ACCESS</h2>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d468.03586499526875!2d139.77008836678633!3d35.68150278364519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfdb2d7a1d7%3A0xea37c2d7b182ce52!2z5Liy54S8IOm7kuadvuWxiyDlhavph43mtLLmnKzlupc!5e0!3m2!1sja!2sjp!4v1538030767233" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="access_bottom">
+				<div class="access_img">
+					<img class="a-img" src="public/access.jpg">
+				</div>
+				<div class="access_text">
+
+					串焼 黒松屋 八重洲店<br>
+					<br>
+					〒103-0028<br>
+					東京都中央区八重洲1-6-2  1F<br>
+					東京駅八重洲北口より徒歩１分<br>
+					TEL. 03-6281-9880<br>
+					<br>
+					-ランチ 11:00 - 14:00 (L.O.)<br>
+					-ディナー 17:00 - 22:00 (L.O.)<br>
+					<br>
+					年中無休
+
+
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="reservation" id="reservation">
+			<div class="reserv_title">
+				<div class="reserv_border"></div>
+				<h2>RESERVATION</h2>
+			</div>
+			<div class="reserv_content">
+				<a class="reserv_btn" href="https://dubianliao.wixsite.com/mysite">
+					<p class="reserv_text">RESERVATION ></p>
+				</a>
+			</div>
+		</div>
+		<div class="recruit" id="recruit">
+			<div class="recruit_title">
+				<div class="recruit_border"></div>
+				<h2>RECRUIT</h2>
+			</div>
+			<div class="recruit_content">
+				<a class="recruit_btn" href="https://dubianliao.wixsite.com/mysite">
+					<p class="recruit_text">ENTRY ></p>
+				</a>
+			</div>
+		</div>
+	</div>
+		<div class="insta">
+		</div>
+	<footer>
+		<div class="line_border"></div>
+		<div class="line_logo">
+			<a class="fab fa-line" href="http://blog-at.line.me/archives/22841554.html"></a>
+		</div>
+		<div class="line_text">
+			<p class="l_text">
+				友達追加でお勧め情報をお知らせ致します。
+			</p>
+		</div>
+		<div class="footer_bottom">
+			<div class="footer_bottom_logo"></div>
+			<P class="footer_bottom_text">
+				COPYRIGHT ©黒松屋 ALL RIGHTS RESERVED.
+			</p>
+		</div>
+	</footer>
+
+
+
+</body>
+
+</html>
